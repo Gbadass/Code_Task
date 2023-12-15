@@ -1,0 +1,196 @@
+.adminDashboard-container{
+  height:100vh;
+  width: 100%;
+  background-color: black;
+  padding: 50px;
+  overflow: scroll;
+  }
+
+  .nav{
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav h1{
+    color: white;
+    font-size: 35px;
+  }
+
+  nav button{
+    background-color: greenyellow;
+    font-size: 30px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    border-radius: 20px;
+  }
+
+  .board-title-div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    align-items: center;
+
+  }
+
+  .board-title-date-details{
+    display: flex;
+    background-color: rgb(38, 38, 38);
+    padding: 12px;
+    padding-right: 20px;
+    padding-left: 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+
+
+  }
+
+  
+  .board-title-date{
+color: grey;
+font-size: 15px;
+
+  }
+
+  .board-title-submission{
+    color: grey;
+    font-size: 15px;
+    background-color: greenyellow;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+
+  }
+
+  .board-title-time{
+    color: grey;
+    font-size: 15px;
+  }
+
+  .board-title{
+    color: white;
+    font-size: 35px;
+  }
+
+  .card-description{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+  }
+
+  .card-description-innerd1{
+    display: flex;
+  }
+
+  .card-description-innerd1-p1{
+    font-size: 15px;
+  }
+
+  .card-description-innerd1-p2{
+    font-size: 15px;
+    margin-left: 30px;
+  }
+
+  .card-description-p1{
+    font-size: 15px;
+    margin-left: 80px;
+  }
+
+  .card-description-p2{
+    font-size: 15px;
+  }
+
+  .board-card{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  .board-card-innerd1{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+
+  .board-card-innerd1 img{
+ width: 100px;
+ height: 50px;
+ border-radius: 5px;
+  }
+
+  .board-card-innerd2{
+display: flex;
+align-items: center;
+     }
+   
+
+  .board-card-innerd2 img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+     }
+   
+
+  .board-card-innerd1 p{
+    font-size: 20px;
+    margin-left: 20px;
+    white-space: wrap;
+    width: 70%;
+  }
+
+  .board-card-innerd2 p{
+    font-size: 15px;
+    margin-left: 10px;
+  }
+
+  .board-card-innerd3 p{
+    font-size: 20px;
+  }
+
+  .board-card-p1{
+    font-size: 20px;
+  }
+
+  .board-card-inner-cont1{
+    display: flex;
+    width: 50%;
+    align-items: center;
+  }
+  .board-card-inner-cont2{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center;
+  }
+
+  .button-divs{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .button-divs-btn1{
+padding: 10px;
+padding-left: 20px;
+color: grey;
+font-size: 20px;
+background-color: greenyellow;
+  }
+
+  .button-divs-btn2{
+    padding: 10px;
+    padding-left: 20px;
+    color: grey;
+    font-size: 20px;
+    background-color: greenyellow;
+    margin-left: 20px;
+      }

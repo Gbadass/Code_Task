@@ -7,6 +7,7 @@ const initialState = {
   path: "",
 };
 
+
 const reducer = (state, action) => {
   switch (action.type) {
     case "SNACKBAR":
@@ -31,6 +32,7 @@ const reducer = (state, action) => {
 };
 
 export const showToast = (dispatch, message, timeout = 3000) => {
+
   dispatch({
     type: "SNACKBAR",
     payload: {

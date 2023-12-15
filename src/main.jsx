@@ -5,6 +5,9 @@ import SnackBar from "./components/SnackBar";
 import AdminDashboardPage from "./pages/AdminDashboardPage";
 import AdminLoginPage from "./pages/AdminLoginPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import { useEffect } from "react";
+import { tokenExpireError } from "./authContext";
+import MkdSDK from "./utils/MkdSDK";
 
 function renderRoutes(role) {
   switch (role) {
@@ -12,9 +15,16 @@ function renderRoutes(role) {
       return (
         <Routes>
           <Route
+            exact
             path="/admin/dashboard"
             element={<AdminDashboardPage />}
           ></Route>
+          <Route
+            path="/admin/login"
+            exact
+            element={<AdminLoginPage />}
+          ></Route>
+          <Route path="*" exact element={<NotFoundPage />}></Route>
         </Routes>
       );
       break;
@@ -37,9 +47,8 @@ function Main() {
       <div className="flex w-full">
         <div className="w-full">
           <div className="page-wrapper w-full py-10 px-5">
-            {!state.isAuthenticated
-              ? renderRoutes("none")
-              : renderRoutes(state.role)}
+            {/* {renderRoutes("admin")} */}
+            {!state.token ? renderRoutes("none") : renderRoutes(state.role)}
           </div>
         </div>
       </div>
